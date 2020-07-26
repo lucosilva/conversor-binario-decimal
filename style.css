@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background: rgb(151, 221, 93);
+
+    display: flex;
+    flex-direction: column;
+}
+
+.picture {
+    width: 100%;
+    height: 65%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.picture .result{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.picture .result h3{
+    margin-top: 20px;
+}
+.picture .result p{
+    font-size: 20px;
+    padding: 10px 0;
+}
+.picture .title h1 {
+    font-weight: 400;
+    font-size: 21px;
+    text-align: center;
+}
+
+.form {
+    width: 100%;
+    padding: 0 25px;
+
+    display: flex;
+    justify-content: center;   
+}
+
+.form form {
+    width: 100%;
+    height: fit-content;
+
+    display: flex;
+    align-items: center;   
+    flex-direction: column;
+}
+
+.form form input {
+    width: 100%;
+    height: 45px;
+    border-radius: 13px;
+    margin: 15px 0;
+    padding: 10px;
+    font-size: 17px;
+}
+
+.form form input[type="button"]{
+    width: 80%;
+    background: rgb(64, 112, 35);
+    color: #fff;
+   
+}
+.form form input[type="button"]:hover{
+    background: rgb(114, 180, 74);
+}
+
+@media(min-width: 900px){
+    .container{
+        flex-direction: row;
+        background: rgb(93, 138, 221);
+    }
+    .picture{
+        height: 100%;
+    }
+    .form{
+        height: 100%;
+        align-items: center;
+    }
+    .form form{
+        padding: 0 60px;
+    }
+    .picture .title h1,
+    .picture .result h3,
+    .picture .result p{
+        font-size: 29px;
+    }
+    .form form input{
+        height: 60px;
+        font-size: 23px;
+    }
+    .form form input[type="button"]{
+        background: rgb(35, 112, 102);
+        color: #fff; 
+    }
+    .form form input[type="button"]{
+        background: rgb(35, 112, 76);
+        color: #fff; 
+    }
+    
+}
